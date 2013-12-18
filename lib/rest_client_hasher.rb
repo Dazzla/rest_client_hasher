@@ -1,4 +1,4 @@
-require "rest_client_hasher/version"
+require_relative 'rest_client_hasher'
 
 module RestClientHasher
   class Requests
@@ -21,4 +21,10 @@ module RestClientHasher
       JSON.parse response.body
     end
   end
+
+  def self.unwrap_from_array(array)
+    array = array[0] if array.respond_to?(:map!)
+    array
+  end
+
 end
