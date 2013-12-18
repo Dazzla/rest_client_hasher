@@ -1,23 +1,22 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rest_client_hasher/version'
 
-Gem::Specification.new do |spec|
-  spec.name          = "rest_client_hasher"
-  spec.version       = RestClientHasher::VERSION
-  spec.authors       = ["johnwake"]
-  spec.email         = ["jwakeling@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
-  spec.license       = "MIT"
+Gem::Specification.new do |s|
+  s.name          = "rest_client_hasher"
+  s.version       = "0.0.2" 
+  s.authors       = ["John Wakeling"]
+  s.email         = ["jwakeling23@gmail.com"]
+  s.description   = %q{Rest-Clint-Hasher for Json requests}
+  s.summary       = %q{Rest-Clint-Hasher for Json requests}
+  s.homepage      = "https://github.com/johnwake/rest_client_hasher"
+  s.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
-  spec.require_paths = ["lib"]
+  s.files         = `git ls-files`.split($/)
+  s.executables   = s.files.grep(%r{^bin/}) { |f| File.basename(f) }
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
+  s.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake"
+  s.add_development_dependency "bundler"
+  s.add_development_dependency "rake"
 end

@@ -1,8 +1,7 @@
 require 'test/unit'
-require_relative '../lib/rest_client_hasher/array_helper'
+require_relative '../lib/array_helper'
 
 class ArrayHelperTest < Test::Unit::TestCase
-
 
   def setup
     @test_hash = {:one => '1', :two => '2'}
@@ -21,12 +20,5 @@ class ArrayHelperTest < Test::Unit::TestCase
   def test_unwrap_from_array_when_string_passed
     assert_equal(@test_string, ArrayHelper.unwrap_from_array(@test_string))
   end
-
-
-
-  def teardown
-
-  end
-
 
 end
