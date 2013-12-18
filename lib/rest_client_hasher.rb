@@ -1,4 +1,4 @@
-require "rest_client_hasher/version"
+require_relative 'rest_client_hasher'
 
 module RestClientHasher
   class Requests
@@ -21,4 +21,5 @@ module RestClientHasher
       JSON.parse response.body
     end
   end
+
 end
