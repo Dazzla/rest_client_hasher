@@ -18,11 +18,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+RestClientHasher provides GET, POST and PUT methods which return a Ruby hash if json is received. ArrayHelper.unwrap_from_array will unwrap a hash from a single-element array
 
 ## Running Tests
 
-ruby tests/*
+/ruby tests/*
 
 ## Contributing
 
