@@ -1,4 +1,4 @@
-require_relative 'rest_client_hasher'
+require 'rest-client'
 
 module RestClientHasher
   class Requests
